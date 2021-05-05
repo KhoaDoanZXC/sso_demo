@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MY PAGE</title>
+</head>
+<body>
+    <h3 th:text="@{'Welcome to my demo page ' + ${username}}"></h3>
+    <div><img th:src="${picture}"></div>
+    <div th:text="@{'Id: ' + ${id}}"></div>
+    <div th:text="@{'Name: ' + ${username}}"></div>
+    <div th:text="@{'Email: ' + ${email}}"></div>
+
+</body>
+</html>
